@@ -8,5 +8,44 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
     <script type="module" src="./assets/js/app.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <h1 class="heading-primary">IP Address Tracker</h1>
+      <div class="header__input-box">
+        <input
+          type="text"
+          class="header__input"
+          placeholder="Search for any IP address or domain"
+        />
+        <button class="header__submit">
+          <img
+            src="./assets/images/icon-arrow.svg"
+            alt="arrow icon"
+            class="header__submit-icon"
+          />
+        </button>
+      </div>
+      <div class="details">
+        <div class="details__section">
+          <h2 class="heading-secondary">ip address</h2>
+          <span class="details__value details__ip">192.212.174.101</span>
+        </div>
+        <div class="details__section">
+          <h2 class="heading-secondary">location</h2>
+          <span class="details__value details__location"
+            >Brooklyn, NY 10001</span
+          >
+        </div>
+        <div class="details__section">
+          <h2 class="heading-secondary">timezone</h2>
+          <span class="details__value details__timezone">UTC -05:00</span>
+        </div>
+        <div class="details__section">
+          <h2 class="heading-secondary">isp</h2>
+          <span class="details__value details__isp">SpaceX Starlink</span>
+        </div>
+      </div>
+    </header>
+    <div class="map"></div>
+  </body>
 </html>
