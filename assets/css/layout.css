@@ -50,16 +50,17 @@ body {
 .details {
   display: flex;
   background-color: #fff;
-  /* background-color: orangered; */
   justify-content: center;
   align-items: center;
   gap: 4rem;
   width: fit-content;
   max-width: 80%;
-  margin: 7rem auto 0 auto;
+  margin: 6rem auto 0 auto;
   padding: 3.5rem 6rem;
   border-radius: 1.5rem;
   box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 10;
 }
 
 .details__section {
@@ -75,4 +76,10 @@ body {
   font-size: 2.5rem;
   line-height: 1;
   font-weight: 500;
+}
+
+#map {
+  height: calc(100vh - 28rem);
+  min-height: 20rem;
+  z-index: 2;
 }

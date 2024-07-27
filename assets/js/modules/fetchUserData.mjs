@@ -1,6 +1,7 @@
 import setError from './setError.mjs';
 import setSpinner from './setSpinner.mjs';
 import setValues from './setValues.mjs';
+import setView from './setView.mjs';
 import { API_KEY } from '../app';
 
 export default async function () {
@@ -22,6 +23,9 @@ export default async function () {
 
     // Setting values
     setValues(ip, location, timezone, isp);
+
+    // Setting view of map and marker on map
+    setView(lat, lng);
   } catch (err) {
     // Setting error message
     setError(err);

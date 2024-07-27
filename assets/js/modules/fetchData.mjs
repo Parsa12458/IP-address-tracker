@@ -1,13 +1,15 @@
 import setError from './setError.mjs';
 import setSpinner from './setSpinner.mjs';
 import setValues from './setValues.mjs';
+import setView from './setView.mjs';
 import { inputEl, API_KEY } from '../app';
+import fetchUserData from './fetchUserData.mjs';
 
 export default async function (e) {
   try {
     e.preventDefault();
 
-    if (!inputEl.value) return;
+    if (!inputEl.value) fetchUserData();
     setSpinner();
 
     let res;
@@ -52,6 +54,9 @@ export default async function (e) {
 
     // Setting values
     setValues(ip, location, timezone, isp);
+
+    // Setting view of map and marker on map
+    setView(lat, lng);
   } catch (err) {
     // Setting error message
     setError(err);

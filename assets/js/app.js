@@ -1,5 +1,6 @@
 import fetchUserData from './modules/fetchUserData.mjs';
 import fetchData from './modules/fetchData.mjs';
+import { renderMap } from './modules/renderMap.mjs';
 
 export const API_KEY = 'at_gfMCV5hB8agwXNpY9F7LVIxF0dswH';
 export const ipEl = document.querySelector('.details__ip');
@@ -11,6 +12,7 @@ const submitEl = document.querySelector('.header__submit');
 
 const init = function () {
   fetchUserData();
+  renderMap();
   submitEl.addEventListener('click', fetchData);
 };
 init();
