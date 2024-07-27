@@ -83,3 +83,68 @@ body {
   min-height: 20rem;
   z-index: 2;
 }
+
+/* Responsive */
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (max-width: 50em) {
+  html {
+    font-size: 45%;
+  }
+
+  .details {
+    gap: 2rem;
+    padding: 2.5rem 4rem;
+  }
+
+  .details__value {
+    font-size: 2rem;
+  }
+
+  .details__section:not(:last-child) {
+    padding-right: 1.5rem;
+  }
+
+  .header__input {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 32.5em) {
+  html {
+    font-size: 40%;
+  }
+
+  .details {
+    max-width: 90%;
+    gap: 1rem;
+  }
+
+  .details__value {
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+}
+
+@media only screen and (max-width: 25em) {
+  .details {
+    flex-direction: column;
+  }
+
+  .details__section {
+    text-align: center;
+  }
+
+  .details__section:not(:last-child) {
+    border-right: 0;
+    padding-right: 0;
+  }
+
+  .details__value {
+    font-size: 2rem;
+  }
+}

@@ -103,3 +103,11 @@
     transform: rotate(360deg);
   }
 }
+
+/* Responsive */
+@media only screen and (max-width: 32.5em) {
+  .heading-secondary {
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+  }
+}
