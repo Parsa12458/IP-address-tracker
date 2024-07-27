@@ -55,6 +55,7 @@ body {
   align-items: center;
   gap: 4rem;
   width: fit-content;
+  max-width: 80%;
   margin: 7rem auto 0 auto;
   padding: 3.5rem 6rem;
   border-radius: 1.5rem;
