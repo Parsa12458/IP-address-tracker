@@ -148,3 +148,8 @@ body {
     font-size: 2rem;
   }
 }
+
+.marker-style {
+  background: none;
+  border: none;
+}

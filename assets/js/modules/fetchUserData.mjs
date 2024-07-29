@@ -12,7 +12,6 @@ export default async function () {
       `https://geo.ipify.org/api/v2/country,city?apiKey=${API_KEY}`
     );
     const data = await res.json();
-    console.log(data);
 
     // Getting data
     const { ip } = data;
